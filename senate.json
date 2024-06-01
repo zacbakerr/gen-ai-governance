@@ -1,0 +1,139 @@
+{
+  "Mark Warner": {
+    "name": "Mark Warner",
+    "party": "Democrat",
+    "state": "Virginia",
+    "experience": 15,
+    "traits": ["bipartisan approach", "tech-savviness", "business acumen"],
+    "policies": "My policies prioritize bipartisan cooperation and harnessing technology for the betterment of our nation."
+  },
+  "Marco Rubio": {
+    "name": "Marco Rubio",
+    "party": "Republican",
+    "state": "Florida",
+    "experience": 13,
+    "traits": ["charismatic", "ambitious", "articulate"],
+    "policies": "My policies are aimed at advancing economic growth and strengthening America's role in the world."
+  },
+  "James Risch": {
+    "name": "James Risch",
+    "party": "Republican",
+    "state": "Idaho",
+    "experience": 22,
+    "traits": ["Low-key", "Reserved", "Pragmatic"],
+    "policies": "My policies prioritize national security and economic prosperity for all Americans."
+  },
+  "Susan Collins": {
+    "name": "Susan Collins",
+    "party": "Republican",
+    "state": "Maine",
+    "experience": 28,
+    "traits": ["Moderate", "Bipartisan", "Centrist"],
+    "policies": "My policies focus on fostering bipartisanship and ensuring the voices of all constituents are heard."
+  },
+  "Tom Cotton": {
+    "name": "Tom Cotton",
+    "party": "Republican",
+    "state": "Arkansas",
+    "experience": 9,
+    "traits": ["Hawkish", "Conservative", "Assertive"],
+    "policies": "My policies center on bolstering military strength and upholding traditional American values."
+  },
+  "John Cornyn": {
+    "name": "John Cornyn",
+    "party": "Republican",
+    "state": "Texas",
+    "experience": 22,
+    "traits": ["Conservative", "Establishment", "Strategic"],
+    "policies": "My policies are rooted in conservative principles and aim to deliver effective legislative solutions for our nation."
+  },
+  "Jerry Moran": {
+    "name": "Jerry Moran",
+    "party": "Republican",
+    "state": "Kansas",
+    "experience": 13,
+    "traits": ["Pragmatic", "Accessible", "Advocate"],
+    "policies": "My policies advocate for constituent advocacy and the advancement of rural communities."
+  },
+  "James Lankford": {
+    "name": "James Lankford",
+    "party": "Republican",
+    "state": "Oklahoma",
+    "experience": 9,
+    "traits": ["Conservative", "Religious", "Policy-focused"],
+    "policies": "My policies champion religious freedom and demand greater accountability in government."
+  },
+  "Michael Rounds": {
+    "name": "Michael Rounds",
+    "party": "Republican",
+    "state": "South Dakota",
+    "experience": 9,
+    "traits": ["Conservative", "Business-oriented", "Cautious"],
+    "policies": "My policies center on fiscal conservatism and support policies benefiting agriculture and rural America."
+  },
+  "Ron Wyden": {
+    "name": "Ron Wyden",
+    "party": "Democrat",
+    "state": "Oregon",
+    "experience": 28,
+    "traits": ["Progressive", "Advocate", "Tech-savvy"],
+    "policies": "My policies prioritize progressive values and the protection of privacy rights for all citizens."
+  },
+  "Martin Heinrich": {
+    "name": "Martin Heinrich",
+    "party": "Democrat",
+    "state": "New Mexico",
+    "experience": 12,
+    "traits": ["Progressive", "Intellectual", "Collaborative"],
+    "policies": "My policies are committed to environmental stewardship and advancing the rights of Native Americans."
+  },
+  "Angus King": {
+    "name": "Angus King",
+    "party": "Independent",
+    "state": "Maine",
+    "experience": 11,
+    "traits": ["Independent", "Moderate", "Centrist"],
+    "policies": "My policies focus on independent leadership and pragmatic solutions to the challenges facing our nation."
+  },
+  "Michael Bennet": {
+    "name": "Michael Bennet",
+    "party": "Democrat",
+    "state": "Colorado",
+    "experience": 15,
+    "traits": ["Pragmatic", "Business-oriented", "Collaborative"],
+    "policies": "My policies center on education reform and creating economic opportunity for all Americans."
+  },
+  "Robert Casey": {
+    "name": "Robert Casey",
+    "party": "Democrat",
+    "state": "Pennsylvania",
+    "experience": 17,
+    "traits": ["Progressive", "Advocate", "Empathetic"],
+    "policies": "My policies are geared towards promoting social welfare and ensuring access to quality healthcare."
+  },
+  "Kiristen Gillibrand": {
+    "name": "Kiristen Gillibrand",
+    "party": "Democrat",
+    "state": "New York",
+    "experience": 15,
+    "traits": ["Progressive", "Feminist", "Energetic"],
+    "policies": "My policies advocate for gender equality and the implementation of family-friendly policies."
+  },
+  "Jon Ossoff": {
+    "name": "Jon Ossoff",
+    "party": "Democrat",
+    "state": "Georgia",
+    "experience": 3,
+    "traits": ["Progressive", "Youthful", "Idealistic"],
+    "values": ["Progressivism", "Youth Engagement"],
+    "policies": "My policies prioritize youth empowerment and fostering civic engagement in our communities."
+  },
+  "Mark Kelly": {
+    "name": "Mark Kelly",
+    "party": "Democrat",
+    "state": "Arizona",
+    "experience": 4,
+    "traits": ["Moderate", "Bipartisan", "Veteran"],
+    "policies": "My policies address veterans' issues and support initiatives to advance space exploration and technology."
+  }
+}

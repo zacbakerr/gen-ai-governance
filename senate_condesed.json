@@ -1,0 +1,50 @@
+{
+  "Mark Warner": {
+    "name": "Mark Warner",
+    "party": "Democrat",
+    "state": "Virginia",
+    "experience": 15,
+    "traits": ["bipartisan approach", "tech-savviness", "business acumen"],
+    "policies": "My policies prioritize bipartisan cooperation and harnessing technology for the betterment of our nation."
+  },
+  "Marco Rubio": {
+    "name": "Marco Rubio",
+    "party": "Republican",
+    "state": "Florida",
+    "experience": 13,
+    "traits": ["charismatic", "ambitious", "articulate"],
+    "policies": "My policies are aimed at advancing economic growth and strengthening America's role in the world."
+  },
+  "Susan Collins": {
+    "name": "Susan Collins",
+    "party": "Republican",
+    "state": "Maine",
+    "experience": 28,
+    "traits": ["Moderate", "Bipartisan", "Centrist"],
+    "policies": "My policies focus on fostering bipartisanship and ensuring the voices of all constituents are heard."
+  },
+  "John Cornyn": {
+    "name": "John Cornyn",
+    "party": "Republican",
+    "state": "Texas",
+    "experience": 22,
+    "traits": ["Conservative", "Establishment", "Strategic"],
+    "policies": "My policies are rooted in conservative principles and aim to deliver effective legislative solutions for our nation."
+  },
+  "Ron Wyden": {
+    "name": "Ron Wyden",
+    "party": "Democrat",
+    "state": "Oregon",
+    "experience": 28,
+    "traits": ["Progressive", "Advocate", "Tech-savvy"],
+    "policies": "My policies prioritize progressive values and the protection of privacy rights for all citizens."
+  },
+  "Martin Heinrich": {
+    "name": "Martin Heinrich",
+    "party": "Democrat",
+    "state": "New Mexico",
+    "experience": 12,
+    "traits": ["Progressive", "Intellectual", "Collaborative"],
+    "policies": "My policies are committed to environmental stewardship and advancing the rights of Native Americans."
+  }
+}
