@@ -12,10 +12,10 @@ class Senator:
         self.state = state
         self.experience = experience
         self.traits = traits
-        self.policies = policies  # Policies
+        self.policies = policies
         self.backend = backend
         self.agent_hist = ""
-        self.memory = defaultdict(list)  # Memory structure to store past interactions
+        self.memory = defaultdict(list)
 
     def inference_senator(self, context, question):
         if self.backend == "gpt-4":
@@ -138,7 +138,6 @@ def main(openai_api_key, num_scenarios, senate_json):
             else:
                 print("Invalid choice. Please enter 'C' to continue conversation or 'Q' to ask a senator a question.")
 
-        # Further processing of the conversation can be added here
         time.sleep(1.0)
 
 if __name__ == "__main__":
