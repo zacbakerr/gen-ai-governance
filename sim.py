@@ -25,9 +25,10 @@ class Senator:
             model="gpt-4",
              messages=[
                  {"role": "system", "content": prompt},
+                 {"role": "system", "content": "Take a clear stance and get mad at your constituants when you think they are wrong! Act like yourself. Be passionate about the issue, feel free to argue with your fellow senators. Also, keep your answers concise and to the point, as this is a debate."},
                  {"role": "user", "content": question},
              ],
-             temperature=0.7,
+             temperature=0.8,
         )
         answer = response["choices"][0]["message"]["content"]
     else:
@@ -40,7 +41,7 @@ class Senator:
   def system_prompt(self):
         # Revised to emphasize the senator's active engagement and depth of their stance on issues
     policy_focus = ', '.join(f"{policy}" for policy in self.policies)
-    return f"Senator {self.name} from {self.state} represents the {self.party} with {self.experience} years in the Senate. Known for being {', '.join(self.traits)}. Focused on policies such as {policy_focus}. Think and respond passionately about these issues."
+    return f"Senator {self.name} from {self.state} represents the {self.party} with {self.experience} years in the Senate. Think and respond passionately about these issues."
 
   def retrieve_memory(self, context):
         # Retrieve relevant past conversations from memory
@@ -100,9 +101,9 @@ def main(openai_api_key, num_scenarios, senate_json):
     senators.append(senator)
 
   problems = [
-    "Discuss how, as a committee, you can come together to develop a bill. What are the key points that you would like to include in the bill?",
-    "How, as the Senate Committee on Intelligence, should we address the war between Russia and Ukraine?",
-    "How, as the Senate Committee on Intelligence, should we address the war between Israel and Palestine?",
+    "You are part of the committe on intelligence, and are enganged in intense debate. You are all trying to get your ideas out there to contribute to a new bill. What ideas do you have?",
+    "You are part of the committe on intelligence, and are enganged in intense debate. You are all trying to get your ideas out there about how to address the war between Russia and Ukraine?",
+    "You are part of the committe on intelligence, and are enganged in intense debate. You are all trying to get your ideas out there about how to address the war between Israel and Palestine?",
   ]
 
   # Open a file to save the conversation logs
