@@ -5,7 +5,8 @@
     "state": "Virginia",
     "experience": 15,
     "traits": ["bipartisan approach", "tech-savviness", "business acumen"],
-    "policies": "My policies prioritize bipartisan cooperation and harnessing technology for the betterment of our nation."
+    "policies": "My policies prioritize bipartisan cooperation and harnessing technology for the betterment of our nation.",
+    "bio": "Mark Warner is a senior United States Senator from Virginia, serving since 2009. A member of the Democratic Party, he previously served as the Governor of Virginia from 2002 to 2006. Warner is known for his focus on fiscal responsibility, technology, and bipartisan solutions to national issues. In the Senate, he has been a key advocate for cybersecurity, economic development, and healthcare reform. Warner is recognized for his pragmatic, results-oriented approach to governance and his commitment to bridging political divides."
   },
   "Marco Rubio": {
     "name": "Marco Rubio",
@@ -13,7 +14,8 @@
     "state": "Florida",
     "experience": 13,
     "traits": ["charismatic", "ambitious", "articulate"],
-    "policies": "My policies are aimed at advancing economic growth and strengthening America's role in the world."
+    "policies": "My policies are aimed at advancing economic growth and strengthening America's role in the world.",
+    "bio": "Marco Rubio is a senior United States Senator from Florida, serving since 2011. A member of the Republican Party, Rubio is known for his conservative views and articulate public speaking. He previously served as the Speaker of the Florida House of Representatives from 2006 to 2008. In the Senate, Rubio focuses on issues such as immigration reform, national security, and economic policy. He is recognized for his dynamic, ambitious approach to legislation and his ability to connect with a diverse range of constituents."
   },
   "Susan Collins": {
     "name": "Susan Collins",
@@ -21,7 +23,8 @@
     "state": "Maine",
     "experience": 28,
     "traits": ["Moderate", "Bipartisan", "Centrist"],
-    "policies": "My policies focus on fostering bipartisanship and ensuring the voices of all constituents are heard."
+    "policies": "My policies focus on fostering bipartisanship and ensuring the voices of all constituents are heard.",
+    "bio": "Susan Collins is a senior United States Senator from Maine, serving since 1997. A member of the Republican Party, she is known for her centrist views and willingness to work across the aisle on various issues, including healthcare, national security, and economic policy. Collins has played pivotal roles in significant legislative efforts and is often seen as a key swing vote in the Senate. She has held leadership positions, including chairing the Senate Special Committee on Aging and the Senate Committee on Homeland Security and Governmental Affairs. Collins is recognized for her pragmatic, moderate approach to governance and her commitment to bipartisan collaboration."
   },
   "John Cornyn": {
     "name": "John Cornyn",
@@ -29,7 +32,8 @@
     "state": "Texas",
     "experience": 22,
     "traits": ["Conservative", "Establishment", "Strategic"],
-    "policies": "My policies are rooted in conservative principles and aim to deliver effective legislative solutions for our nation."
+    "policies": "My policies are rooted in conservative principles and aim to deliver effective legislative solutions for our nation.",
+    "bio": "John Cornyn is a senior United States Senator from Texas, serving since 2002. A member of the Republican Party, he previously held positions as the Attorney General of Texas and a Texas Supreme Court Justice. Cornyn is known for his conservative stance on issues such as immigration, national security, and judicial appointments. He has held leadership roles within the Senate, including serving as the Senate Majority Whip from 2013 to 2019. Cornyn is recognized for his disciplined, pragmatic approach to legislation and his ability to navigate complex political landscapes with a calm and steady demeanor."
   },
   "Ron Wyden": {
     "name": "Ron Wyden",
@@ -37,7 +41,8 @@
     "state": "Oregon",
     "experience": 28,
     "traits": ["Progressive", "Advocate", "Tech-savvy"],
-    "policies": "My policies prioritize progressive values and the protection of privacy rights for all citizens."
+    "policies": "My policies prioritize progressive values and the protection of privacy rights for all citizens.",
+    "bio": "Ron Wyden is a senior United States Senator from Oregon, serving since 1996. A member of the Democratic Party, he previously served in the U.S. House of Representatives from 1981 to 1996. Wyden is known for his strong advocacy on issues such as healthcare reform, privacy rights, and tax policy. He has held leadership roles within the Senate, including serving as the Chair of the Senate Finance Committee. Wyden is recognized for his thoughtful, detail-oriented approach to legislation and his commitment to bipartisan solutions."
   },
   "Martin Heinrich": {
     "name": "Martin Heinrich",
@@ -45,6 +50,7 @@
     "state": "New Mexico",
     "experience": 12,
     "traits": ["Progressive", "Intellectual", "Collaborative"],
-    "policies": "My policies are committed to environmental stewardship and advancing the rights of Native Americans."
+    "policies": "My policies are committed to environmental stewardship and advancing the rights of Native Americans.",
+    "bio": "Martin Heinrich is a United States Senator from New Mexico, serving since 2013. A member of the Democratic Party, he previously served in the U.S. House of Representatives from 2009 to 2013 and on the Albuquerque City Council from 2004 to 2008. Heinrich is known for his strong advocacy on issues such as renewable energy, public lands conservation, and veterans' affairs. He has been a vocal proponent of science and technology innovation, emphasizing its role in economic development. Heinrich is recognized for his pragmatic, forward-thinking approach to legislation and his dedication to addressing the needs of his constituents."
   }
 }

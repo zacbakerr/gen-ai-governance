@@ -6,13 +6,14 @@ from collections import defaultdict
 import json
 
 class Senator:
-  def __init__(self, name, party, state, experience, traits, policies, backend='gpt-4'):
+  def __init__(self, name, party, state, experience, traits, policies, bio, backend='gpt-4'):
     self.name = name
     self.party = party
     self.state = state
     self.experience = experience
     self.traits = traits
     self.policies = policies
+    self.bio = bio
     self.backend = backend
     self.agent_hist = ""
     self.memory = defaultdict(list)
@@ -22,10 +23,10 @@ class Senator:
     prompt = self.system_prompt() + "\n" + context + "\nSenator's view: " + question
     if self.backend == "gpt-4":
         response = openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-3.5-turbo",
              messages=[
                  {"role": "system", "content": prompt},
-                 {"role": "system", "content": "Take a clear stance and get mad at your constituants when you think they are wrong! Act like yourself. Be passionate about the issue, feel free to argue with your fellow senators. Also, keep your answers concise and to the point, as this is a debate."},
+                #  {"role": "system", "content": "Take a clear stance and get mad at your constituants when you think they are wrong! Act like yourself. Be passionate about the issue, feel free to argue with your fellow senators. Also, keep your answers concise and to the point, as this is a debate."},
                  {"role": "user", "content": question},
              ],
              temperature=0.8,
@@ -41,32 +42,13 @@ class Senator:
   def system_prompt(self):
         # Revised to emphasize the senator's active engagement and depth of their stance on issues
     policy_focus = ', '.join(f"{policy}" for policy in self.policies)
-    return f"Senator {self.name} from {self.state} represents the {self.party} with {self.experience} years in the Senate. Think and respond passionately about these issues."
+    return f"Senator {self.name} from {self.state} represents the {self.party} with {self.experience} years in the Senate. Think and respond passionately about these issues. My bio is {self.bio}. Don't reference your bio directly, but let it inform your responses."
 
   def retrieve_memory(self, context):
         # Retrieve relevant past conversations from memory
     if context in self.memory:
       return "\n".join(self.memory[context][-5:])  # Retrieve last 5 responses for the given context
     return ""
-
-    # def choose_response(self, context, conversation, senators):
-    #     potential_responses = []
-    #     for senator in senators:
-    #         if senator != self:
-    #             memory_context = senator.retrieve_memory(context)
-    #             response = senator.inference_senator(memory_context + conversation, "")
-    #             potential_responses.append((senator, response))
-    #     return max(potential_responses, key=lambda x: self._score_response(x[1]))
-
-    # def _score_response(self, response):
-    #     score = 0
-    #     if "bipartisan" in self.traits:
-    #         score += response.count("bipartisan")
-    #     if "pragmatic" in self.traits:
-    #         score += response.count("pragmatic")
-    #     if "traditional" in self.traits:
-    #         score += response.count("traditional")
-    #     return score
 
 def present_problem(senators, problem):
   conversation = problem + "\n\n"
@@ -76,10 +58,6 @@ def present_problem(senators, problem):
       response = senator.inference_senator(memory_context + conversation, "")
       print(f"Senator {senator.name} [{senator.party}]: {response}")
       conversation += f"Senator {senator.name} [{senator.party}]: {response}\n\n"
-            # Interjection
-            # responding_senator, interjection = senator.choose_response(memory_context, conversation, senators)
-            # print(f"Senator {responding_senator.name} [{responding_senator.party}]: {interjection}")
-            # conversation += f"Senator {responding_senator.name} [{responding_senator.party}]: {interjection}\n\n"
   return conversation
 
 def main(openai_api_key, num_scenarios, senate_json):
@@ -96,14 +74,14 @@ def main(openai_api_key, num_scenarios, senate_json):
       senator_data["state"],
       senator_data["experience"],
       senator_data["traits"],
-      senator_data["policies"]
+      senator_data["policies"],
+      senator_data["bio"]
     )
     senators.append(senator)
 
   problems = [
-    "You are part of the committe on intelligence, and are enganged in intense debate. You are all trying to get your ideas out there to contribute to a new bill. What ideas do you have?",
-    "You are part of the committe on intelligence, and are enganged in intense debate. You are all trying to get your ideas out there about how to address the war between Russia and Ukraine?",
-    "You are part of the committe on intelligence, and are enganged in intense debate. You are all trying to get your ideas out there about how to address the war between Israel and Palestine?",
+    # "You are part of the committe on intelligence, and are enganged in intense debate. You are all trying to get your ideas out there to contribute to a new bill. What ideas do you have?",
+    "You are part of the committe on intelligence, and are enganged in intense debate. You are all trying to get your ideas out there about how to address gun control. What should the US do?",
   ]
 
   # Open a file to save the conversation logs
@@ -117,10 +95,9 @@ def main(openai_api_key, num_scenarios, senate_json):
       while True:
         choice = input("Continue conversation (C) or ask a senator a question (Q)? (C/Q): ").upper()
         if choice == "C":
-          new_response = input("Your response: ")
           for senator in senators:
             memory_context = senator.retrieve_memory(problem)
-            response = senator.inference_senator(memory_context + conversation, new_response)
+            response = senator.inference_senator(memory_context + conversation, "")
             print(f"Senator {senator.name} [{senator.party}]: {response}")
             conversation += f"Senator {senator.name} [{senator.party}]: {response}\n\n"
           file.write(conversation)
